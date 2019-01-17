@@ -16,11 +16,12 @@ function nomeDelaJenifer() {
             chances = Math.random() * 100
 
             if (chances > 50)
-                console.log('Jenifer é sua namorada.');
+                return 'Jenifer é sua namorada.';
             else
-                console.log('Jenifer não é sua namorada');
+                return 'Jenifer não deu match, campeão :(';
         }
     }
 }
 
-nomeDelaJenifer();
+const ehMinhaNamorada = nomeDelaJenifer();
+console.log(ehMinhaNamorada);
