@@ -1,6 +1,19 @@
 version: "2"
-plugins:
+engines:
   eslint:
     enabled: true
+  duplication:
+    enabled: true
     config:
-      config: .eslintrc
+      languages:
+      - javascript
+  shellcheck:
+    enabled: true
+ratings:
+  paths:
+  - bin/
+  - lib/**/*.js
+exclude_paths:
+- "node_modules/**"
+- "test/**"
+- "integration/**"
