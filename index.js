@@ -7,7 +7,6 @@ class Tinder {
 const app = new Tinder();
 function nomeDelaJenifer() {
     var chances = 0
-    var poderiaSer = true
     var mina = {}
 
     mina = app.find(Math.random());
